@@ -133,12 +133,12 @@ int theory()
     }
     if (choice == 1 && (theory_marks[0]<91 && theory_marks[1]<91 && theory_marks[2]<91 && theory_marks[3]<71 && theory_marks[4]<71 && theory_marks[5]<71))
     {
-        firstyear[0] += (theory_marks[0]/90.0*100)*(20/100.0);
-        firstyear[1] += (theory_marks[1]/90.0*100)*(20/100.0);
-        firstyear[2] += (theory_marks[2]/90.0*100)*(20/100.0);
-        firstyear[3] += (theory_marks[3]/70.0*100)*(20/100.0);
-        firstyear[4] += (theory_marks[4]/70.0*100)*(20/100.0);
-        firstyear[5] += (theory_marks[5]/70.0*100)*(20/100.0);
+        firstyear[0] += ((double)theory_marks[0]/(double)90*(double)100)*(double)((double)20/(double)100);
+        firstyear[1] += ((double)theory_marks[1]/(double)90*(double)100)*(double)((double)20/(double)100);
+        firstyear[2] += ((double)theory_marks[2]/(double)90*(double)100)*(double)((double)20/(double)100);
+        firstyear[3] += ((double)theory_marks[3]/(double)70*(double)100)*(double)((double)20/(double)100);
+        firstyear[4] += ((double)theory_marks[4]/(double)70*(double)100)*(double)((double)20/(double)100);
+        firstyear[5] += ((double)theory_marks[5]/(double)70*(double)100)*(double)((double)20/(double)100);
         practicals();
     }
     else if (choice==2 && (theory_marks[0]<91 && theory_marks[1]<91 && theory_marks[2]<71 && theory_marks[3]<71 && theory_marks[4]<71 && theory_marks[5]<71)){
