@@ -30,6 +30,7 @@ hsc 2nd Year: for language subjects-- internal marks for practical subjects-- pr
 3rd line containes array of ==> hsc first year theory marks (tam eng mat phy che bio OR tam eng phy che bot zoo)
 4th line containes array of ==> hsc second year internal and practical marks (tam eng mat phy che bio OR tam eng phy che bot zoo)
 
+
 example input:
 
 1
@@ -55,6 +56,7 @@ THANK YOU FOR USING OUR CALCULATOR
 *************************************************************************************************************************************/
 int display()
 {
+    int f;
     printf("\n\n\n");
     for (int i=0;i<6;i++)
     {
@@ -68,6 +70,15 @@ int display()
     printf("\n\n\n\n\TOTAL OBTAINED MARKS: %d/600\n",tot);
     printf("Tenth 50 percent mark is: %d\n",(int)ave);
     printf("THANK YOU FOR USING OUR CALCULATOR\n\n\n");
+    printf("Enter 1 to try again... \n");
+    printf("Enter 0 to exit...\n");
+    scanf("%d",&f);
+    if (f==1){
+        main();
+    }
+    else{
+        printf("THANK YOU :\) ");
+    }
 }
 int practicals()
 {
